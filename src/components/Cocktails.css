@@ -81,8 +81,11 @@
     gap: 1rem;
     color: #fff;
     font-family: 'Modern Negra', serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     z-index: 20;
+}
+.nav-arrow:hover {
+    color:#d4a373 ;
 }
 
 .nav-arrow.left {
@@ -118,7 +121,7 @@
 .highlight-text {
     font-family: serif;
     /* Use a nice serif font */
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     font-weight: 400;

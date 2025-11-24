@@ -46,3 +46,16 @@ export const cocktails = [
 // Keeping these for backward compatibility if needed, but they are not used in the new design
 export const cocktailLists = [];
 export const mockTailLists = [];
+
+export const openingHours = [
+    { day: "Mon-Thu", time: "11:00am - 12am" },
+    { day: "Fri", time: "11:00am - 2am" },
+    { day: "Sat", time: "9:00am - 2am" },
+    { day: "Sun", time: "9:00am - 1am" },
+];
+
+export const socials = [
+    { name: "Instagram", url: "https://instagram.com", icon: "/images/insta.png" },
+    { name: "X", url: "https://x.com", icon: "/images/x.png" },
+    { name: "Facebook", url: "https://facebook.com", icon: "/images/fb.png" },
+];

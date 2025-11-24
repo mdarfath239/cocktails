@@ -5,6 +5,7 @@ import Price from './components/Price';
 import About from './components/About';
 import Art from './components/Art';
 import Cocktails from './components/Cocktails';
+import Contact from './components/Contact';
 
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Art />
       <Cocktails />
+      <Contact />
 
 
     </>

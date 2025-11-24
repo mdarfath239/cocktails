@@ -101,13 +101,14 @@
 
 .masked-container {
     position: absolute;
-    top: 110%;
+    top: 103%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
     pointer-events: none;
     z-index: 10;
+
 }
 
 #masked-content {
@@ -116,14 +117,14 @@
 
 #masked-content h3 {
     font-family: 'Modern Negra', serif;
-    font-size: 3rem;
-    color: #f4d03f;
+    font-size: 2.5rem;
+    color: white;
     margin-bottom: 1rem;
 }
 
 #masked-content p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
 }
 
