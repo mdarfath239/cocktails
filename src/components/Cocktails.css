@@ -9,6 +9,24 @@
     overflow: hidden;
 }
 
+#c-right-leaf,
+#c-left-leaf {
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+    opacity: 1;
+}
+
+#c-right-leaf {
+    top: 0;
+    right: 0;
+}
+
+#c-left-leaf {
+    bottom: 0;
+    left: 0;
+}
+
 .cocktails-nav {
     display: flex;
     justify-content: center;
@@ -16,6 +34,8 @@
     margin-bottom: 4rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 1rem;
+    position: relative;
+    z-index: 10;
 }
 
 .nav-item {
@@ -55,6 +75,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 10;
 }
 
 .cocktail-display {
@@ -84,8 +105,9 @@
     font-size: 2rem;
     z-index: 20;
 }
+
 .nav-arrow:hover {
-    color:#d4a373 ;
+    color: #d4a373;
 }
 
 .nav-arrow.left {

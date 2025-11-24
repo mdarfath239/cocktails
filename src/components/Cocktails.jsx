@@ -37,6 +37,9 @@ const Cocktails = () => {
 
     return (
         <section id="cocktails" className="cocktails-section">
+            <img src="/images/footer-right-leaf.png" alt="leaf-right" id="c-right-leaf" />
+            <img src="/images/footer-left-leaf.png" alt="leaf-left" id="c-left-leaf" />
+
             <div className="cocktails-nav">
                 {cocktails.map((cocktail, index) => (
                     <button
@@ -51,7 +54,7 @@ const Cocktails = () => {
 
             <div className="cocktails-content">
                 <div className="nav-arrow left" onClick={handlePrev}>
-                    <img src="/public/images/left-arrow.png" alt="Previous" />
+                    <img src="/images/left-arrow.png" alt="Previous" />
                     <span>{cocktails[(activeIndex - 1 + cocktails.length) % cocktails.length].name.split(' ').map((word, i) => <span key={i} className="block">{word}</span>)}</span>
                 </div>
 
@@ -66,7 +69,7 @@ const Cocktails = () => {
 
                 <div className="nav-arrow right" onClick={handleNext}>
                     <span>{cocktails[(activeIndex + 1) % cocktails.length].name.split(' ').map((word, i) => <span key={i} className="block">{word}</span>)}</span>
-                    <img src="/public/images/right-arrow.png" alt="Next" />
+                    <img src="/images/right-arrow.png" alt="Next" />
                 </div>
 
                 <div className="cocktail-info" ref={textRef}>
