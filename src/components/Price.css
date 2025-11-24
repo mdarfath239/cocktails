@@ -1,0 +1,139 @@
+.price-section {
+    min-height: 100vh;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.price-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Align to top to match screenshot list start */
+    width: 100%;
+    max-width: 1300px;
+    padding-top: 10vh;
+    /* Give some space for the video to come in */
+}
+
+.menu-column {
+    flex: 1;
+    max-width: 350px;
+}
+
+.left-column {
+    text-align: left;
+}
+
+.right-column {
+    text-align: left;
+    /* Screenshot shows left-aligned text for right column too */
+}
+
+.center-column {
+    flex: 1.5;
+    /* More space for the center video */
+    min-width: 300px;
+    /* This is where the video lands visually */
+}
+
+.menu-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    margin-bottom: 3rem;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.item-name {
+    font-family: 'Modern Negra', serif;
+    font-size: 1.8rem;
+    color: #f4d03f;
+    /* Gold color */
+}
+
+.item-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-left: 1rem;
+}
+
+.item-detail {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    opacity: 0.8;
+    display: block;
+}
+
+/* Decorative Leaves */
+.price-leaf {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    max-width: 12vw;
+    z-index: 1;
+}
+
+.leaf-bottom-left {
+    left: 0;
+    transform: translate(-20%, 20%);
+}
+
+.leaf-bottom-right {
+    right: 0;
+    transform: translate(20%, 20%);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .price-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .center-column {
+        min-height: 300px;
+        /* Placeholder space on mobile */
+        width: 100%;
+    }
+
+    .menu-column {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .right-column {
+        text-align: center;
+    }
+
+    .item-header {
+        justify-content: center;
+    }
+}
