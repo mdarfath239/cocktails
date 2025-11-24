@@ -2,6 +2,10 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Price from './components/Price';
+import About from './components/About';
+import Art from './components/Art';
+import Cocktails from './components/Cocktails';
+
 import './App.css';
 
 function App() {
@@ -10,9 +14,11 @@ function App() {
       <Navbar />
       <Hero />
       <Price />
-      <div className="content">
-        {/* Content below hero can go here */}
-      </div>
+      <About />
+      <Art />
+      <Cocktails />
+
+
     </>
   );
 }

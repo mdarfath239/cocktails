@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -42,13 +43,14 @@ const Hero = () => {
 
         // Video Scrubbing Animation
         const startValue = isMobile ? "top 50%" : "center 60%";
+        const endValue = isMobile ? "120% top" : "bottom top";
+
 
         let videoTl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".hero-video",
+                trigger: "video",
                 start: startValue,
-                endTrigger: "#price",
-                end: "bottom bottom",
+                end: endValue,
                 scrub: true,
                 pin: true,
             },
@@ -86,6 +88,7 @@ const Hero = () => {
                         src="/public/videos/output.mp4"
                         muted
                         playsInline
+                        preload="auto"
                         className="hero-video"
                     />
                 </div>
