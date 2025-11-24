@@ -42,27 +42,27 @@ const Contact = () => {
 
                 <div className="contact-grid">
                     <div className="contact-section">
-                        <h3>VISIT OUR BAR</h3>
-                        <p>456, Raq Blvd. #404, Los Angeles, CA 90210</p>
+                        <h3 className='text-3xl font-bold'>VISIT OUR BAR</h3>
+                        <p className='text-xl font-bold'>45, Raq Blvd. #404, Bangalore, CA 90210</p>
                     </div>
 
                     <div className="contact-section">
-                        <h3>CONTACT US</h3>
-                        <p>(555) 987-6543</p>
-                        <p>hello@jsmcocktail.com</p>
+                        <h3 className='text-3xl font-bold'>CONTACT US</h3>
+                        <p className='text-xl font-bold'>(+91) 9876543210</p>
+                        <p className='text-xl font-bold'>hello@jsmcocktail.com</p>
                     </div>
 
                     <div className="contact-section">
-                        <h3>OPEN EVERY DAY</h3>
+                        <h3 className='text-3xl font-bold'>OPEN EVERY DAY</h3>
                         {openingHours.map((time) => (
-                            <p key={time.day}>
+                            <p key={time.day} className='text-xl font-bold'>
                                 {time.day} : {time.time}
                             </p>
                         ))}
                     </div>
 
                     <div className="contact-section">
-                        <h3>SOCIALS</h3>
+                        <h3 className='text-3xl font-bold'>SOCIALS</h3>
                         <div className="flex-center gap-5">
                             {socials.map((social) => (
                                 <a

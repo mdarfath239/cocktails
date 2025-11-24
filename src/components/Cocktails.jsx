@@ -24,12 +24,12 @@ const Cocktails = () => {
     useGSAP(() => {
         // Animate image and text when activeIndex changes
         gsap.fromTo(imageRef.current,
-            { opacity: 0, y: -50, scale: 0.9 },
-            { opacity: 1, y: -50, scale: 1, duration: 0.5, ease: "power2.out" }
+            { opacity: 0, x: -300, y: -50, scale: 0.9 },
+            { opacity: 1, x: 0, y: -50, scale: 1, duration: 1, ease: "power2.out" }
         );
         gsap.fromTo(textRef.current,
             { opacity: 0, x: -20 },
-            { opacity: 1, x: -20, duration: 0.5, delay: 0.1, ease: "power2.out" }
+            { opacity: 1, x: 0, duration: 0.5, delay: 0.1, ease: "power2.out" }
         );
     }, [activeIndex]);
 
