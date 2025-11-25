@@ -1,16 +1,48 @@
-# React + Vite
+# Velvet Pour
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, immersive web experience for a high-end cocktail bar, featuring smooth scroll animations and a luxurious aesthetic.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework:** [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling:** Tailwind CSS + Vanilla CSS
+- **Animations:** [GSAP](https://gsap.com/) (ScrollTrigger, useGSAP)
+- **Fonts:** Montserrat, Playfair Display, Modern Negra
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Immersive Hero Section:** Video background with scroll-pinned playback that transitions seamlessly into the next section.
+- **Scroll-Triggered Animations:** Elements fade in, slide, and reveal as you scroll.
+- **Responsive Design:** Optimized for both desktop and mobile viewing experiences.
+- **Interactive Menu:** Elegant cocktail and mocktail listings.
 
-## Expanding the ESLint configuration
+## 🛠️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Clone the repository**
+    ```bash
+    git clone <repository-url>
+    cd cocktails
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+## 📂 Project Structure
+
+- `src/components/`:
+  - **Hero:** Main landing area with video and title.
+  - **Price:** Menu section with pricing.
+  - **About:** Brand story and imagery.
+  - **Art:** Artistic showcase section.
+  - **Cocktails:** Carousel/Grid of signature drinks.
+  - **Contact:** Footer and location info.
+
+---
+*Crafted with precision and flair.*
