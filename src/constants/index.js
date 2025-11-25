@@ -16,28 +16,28 @@ export const cocktails = [
     {
         id: 1,
         name: "Classic Mojito",
-        image: "/public/images/drink1.png",
+        image: "/images/drink1.png",
         highlight: "Simple Ingredients, Bold Flavor",
         description: "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights."
     },
     {
         id: 2,
         name: "Raspberry Mojito",
-        image: "/public/images/drink2.png",
+        image: "/images/drink2.png",
         highlight: "Berry Fresh, Summer Breeze",
         description: "A fruity twist on the classic, featuring fresh raspberries muddled with mint and lime. Perfect for a vibrant and refreshing sip."
     },
     {
         id: 3,
         name: "Violet Breeze",
-        image: "/public/images/drink3.png",
+        image: "/images/drink3.png",
         highlight: "Floral Notes, Elegant Taste",
         description: "An elegant blend of violet liqueur, gin, and lemon. This cocktail offers a floral aroma and a sophisticated, smooth finish."
     },
     {
         id: 4,
         name: "Curacao Mojito",
-        image: "/public/images/drink4.png",
+        image: "/images/drink4.png",
         highlight: "Tropical Blue, Exotic Zest",
         description: "A stunning blue variation with Blue Curacao, adding a citrusy orange zest to the classic mint and lime combination."
     }

@@ -96,8 +96,8 @@ const Hero = () => {
             </div>
 
             {/* Leaves positioned relative to viewport */}
-            <img src="/public/images/hero-left-leaf.png" alt="" className="leaf leaf-left" />
-            <img src="/public/images/hero-right-leaf.png" alt="" className="leaf leaf-right" />
+            <img src="/images/hero-left-leaf.png" alt="" className="leaf leaf-left" />
+            <img src="/images/hero-right-leaf.png" alt="" className="leaf leaf-right" />
 
             <div className="hero-content">
                 <div className="hero-main-text">
@@ -109,9 +109,11 @@ const Hero = () => {
                 <div className="hero-visuals">
                     <video
                         ref={videoRef}
-                        src="/public/videos/output.mp4"
+                        src="/videos/output.mp4"
                         muted
                         playsInline
+                        autoPlay
+                        loop
                         preload="auto"
                         className="hero-video"
                     />
@@ -120,7 +122,7 @@ const Hero = () => {
                 <div className="hero-details">
                     <div className="scroll-indicator">
                         <a href="#price">
-                            <img src="/public/images/arrow.png" alt="Scroll down" />
+                            <img src="/images/arrow.png" alt="Scroll down" />
                         </a>
                     </div>
                     <div className="details-left">

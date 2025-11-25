@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Modern Negra';
-  src: url('/public/fonts/Modern Negra Demo.ttf') format('truetype');
+  src: url('/fonts/Modern Negra Demo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

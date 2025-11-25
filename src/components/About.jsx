@@ -61,29 +61,29 @@ const About = () => {
             <div className="about-grid top-grid">
                 <div className="grid-item span-3">
                     <div className="noisy" />
-                    <img src="/public/images/abt1.png" alt="grid-img-1" />
+                    <img src="/images/abt1.png" alt="grid-img-1" />
                 </div>
 
                 <div className="grid-item span-6">
                     <div className="noisy" />
-                    <img src="/public/images/abt2.png" alt="grid-img-2" />
+                    <img src="/images/abt2.png" alt="grid-img-2" />
                 </div>
 
                 <div className="grid-item span-3">
                     <div className="noisy" />
-                    <img src="/public/images/abt5.png" alt="grid-img-5" />
+                    <img src="/images/abt5.png" alt="grid-img-5" />
                 </div>
             </div>
 
             <div className="about-grid bottom-grid">
                 <div className="grid-item span-8">
                     <div className="noisy" />
-                    <img src="/public/images/abt3.png" alt="grid-img-3" />
+                    <img src="/images/abt3.png" alt="grid-img-3" />
                 </div>
 
                 <div className="grid-item span-4">
                     <div className="noisy" />
-                    <img src="/public/images/abt4.png" alt="grid-img-4" />
+                    <img src="/images/abt4.png" alt="grid-img-4" />
                 </div>
             </div>
 
