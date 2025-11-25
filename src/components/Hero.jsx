@@ -41,28 +41,52 @@ const Hero = () => {
             ease: "power3.out"
         }, "<");
 
-        // Video Scrubbing Animation
-        const startValue = isMobile ? "top 50%" : "center 60%";
-        const endValue = isMobile ? "120% top" : "bottom top";
+        // Responsive ScrollTrigger
+        let mm = gsap.matchMedia();
 
+        mm.add("(min-width: 1024px)", () => {
+            // Desktop Logic
+            let videoTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "video",
+                    start: "center 60%",
+                    end: "bottom top",
+                    scrub: true,
+                    pin: true,
+                },
+            });
 
-        let videoTl = gsap.timeline({
-            scrollTrigger: {
-                trigger: "video",
-                start: startValue,
-                end: endValue,
-                scrub: true,
-                pin: true,
-            },
+            if (videoRef.current) {
+                videoRef.current.onloadedmetadata = () => {
+                    videoTl.to(videoRef.current, {
+                        currentTime: videoRef.current.duration,
+                    });
+                };
+            }
         });
 
-        if (videoRef.current) {
-            videoRef.current.onloadedmetadata = () => {
-                videoTl.to(videoRef.current, {
-                    currentTime: videoRef.current.duration,
-                });
-            };
-        }
+        mm.add("(max-width: 1023px)", () => {
+            // Mobile Logic
+            let videoTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "video",
+                    start: "top 30%", // Start pinning a bit earlier on mobile
+                    endTrigger: ".center-column", // Pin until we reach the hole in Price section
+                    end: "center center", // Unpin when video center matches hole center
+                    scrub: true,
+                    pin: true,
+                },
+            });
+
+            if (videoRef.current) {
+                videoRef.current.onloadedmetadata = () => {
+                    videoTl.to(videoRef.current, {
+                        currentTime: videoRef.current.duration,
+                    });
+                };
+            }
+        });
+
     }, { scope: ".hero" });
 
     return (

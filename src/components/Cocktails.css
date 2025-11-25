@@ -179,33 +179,77 @@
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+    .cocktails-section {
+        padding: 2rem 1rem;
+        height: auto;
+        min-height: 100vh;
+        justify-content: flex-start;
+    }
+
     .cocktails-nav {
-        gap: 2rem;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
         font-size: 1.2rem;
+    }
+
+    .cocktails-content {
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .cocktail-display {
+        order: 2;
+        width: 100%;
+        height: 40vh;
+        margin: 2rem 0;
+    }
+
+    .cocktail-image {
+        max-height: 100%;
+        max-width: 80%;
     }
 
     .cocktail-info {
         position: relative;
         right: auto;
         bottom: auto;
-        margin-top: 2rem;
+        max-width: 100%;
         text-align: center;
+        order: 1;
+        /* Put text above image */
+        padding: 0 1rem;
     }
 
-    .cocktails-content {
-        flex-direction: column;
-    }
-
-    .nav-arrow {
-        display: none;
-        /* Hide arrows on smaller screens or adjust */
+    .highlight-text {
+        font-size: 2rem;
     }
 
     .recipe-label {
         position: relative;
         left: auto;
         bottom: auto;
-        margin-top: 2rem;
         text-align: center;
+        order: 3;
+        /* Put label below image */
+        margin-top: 1rem;
+    }
+
+    .recipe-name {
+        font-size: 2rem;
+    }
+
+    .nav-arrow {
+        display: none;
+    }
+
+    /* Hide leaves on mobile to prevent overlap */
+    #c-right-leaf,
+    #c-left-leaf {
+        display: none;
     }
 }
