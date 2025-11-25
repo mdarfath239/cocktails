@@ -82,8 +82,8 @@ const Price = () => {
             </div>
 
             {/* Decorative Leaves */}
-            <img src="/public/images/hero-left-leaf.png" alt="" className="price-leaf leaf-bottom-left" />
-            <img src="/public/images/hero-right-leaf.png" alt="" className="price-leaf leaf-bottom-right" />
+            <img src="/images/hero-left-leaf.png" alt="" className="price-leaf leaf-bottom-left" />
+            <img src="/images/hero-right-leaf.png" alt="" className="price-leaf leaf-bottom-right" />
         </section>
     );
 };
